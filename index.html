@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Simpsons</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <figure id="simpsons">
+                <figcaption>Oooooh Pinaise ! ...</figcaption>
+                <img src="img/s1.png" alt="image des simsons sur un canape">
+            </figure>
+        </header>
+        <main>
+            <input type="checkbox" id="burger-toggle">
+            <label for="burger-toggle" class="burger-container">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </label>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="">Le film</a></li>
+                    <li><a href="">Personnages</a></li>
+                    <li><a href="">Histoire</a></li>
+                    <li><a href="">Matt Groening</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h1>Les Simpsons</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae id harum suscipit! Iste itaque earum magnam, autem nostrum dignissimos est, aliquam sapiente rerum aspernatur libero, odit natus ex. Deleniti, vel?
+                Dolores dolor molestias hic! Sapiente vel recusandae consequuntur, molestias sit harum totam maiores ex, natus laudantium rem magnam? Distinctio sed earum reprehenderit aperiam temporibus laudantium, cupiditate voluptatem placeat nobis doloremque.
+                Sit incidunt quisquam voluptatem nam inventore, odit laborum? Eligendi molestiae enim incidunt nobis non sapiente atque aspernatur. Exercitationem natus fugiat beatae sunt id nam numquam molestias ullam? Illum, fugiat culpa!
+                Ratione nemo accusamus, nobis, quisquam, modi commodi alias optio repellendus debitis nesciunt et aperiam perspiciatis eos eligendi. Suscipit, esse. Doloremque, tempora fugiat unde quia nam dolorem consequuntur explicabo reiciendis tenetur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum placeat officia voluptatum cupiditate laboriosam, alias libero dolorum officiis obcaecati at. Modi tenetur fugit dolorum quaerat, pariatur facilis nisi voluptate molestias.
+                Sint molestias, repellendus illo consequatur quibusdam vitae natus hic nesciunt nam, perspiciatis, sapiente sit omnis! Doloremque vel maiores numquam saepe, explicabo ad aut laudantium molestias obcaecati distinctio dolores itaque optio!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nobis nihil, optio eius, itaque fugiat vero dolorum maxime alias accusamus cum minus architecto incidunt. Officia vitae aliquam rerum totam fuga.
+            </p>
+            </article>
+            <aside>
+                <figure>
+                    <img src="img/s2.png" alt="matt groening">
+                    <figcaption>Matt Groening</figcaption>
+                </figure>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsam fugit iste quo, a soluta fuga accusamus eligendi vel ratione et aspernatur est, tenetur quibusdam sed hic, asperiores aliquid eaque!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore dolore corporis, incidunt at distinctio provident! Molestias, unde deleniti mollitia maiores aliquid praesentium qui dolorem repellendus exercitationem hic laborum ex est?
+                </p>
+            </aside>
+        </main>
+        <footer>
+            <section>
+                <small> &copy;2015 The Simpsons Elan</small>
+            </section>
+        </footer>
+    </div>
+    <script>
+        document.querySelector(".burger-container").addEventListener("click", () => {
+            document.querySelector("nav ul").classList.toggle("active");
+            document.querySelector(".burger-container").classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
